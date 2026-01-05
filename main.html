@@ -2,14 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Styled Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        thead {
+            background-color: #2a7ae2;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #e3f2fd;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+    <table>
+        <caption>CBSE Result Sheet (Class 12)</caption>
+
+        <!-- Table Head -->
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Anisha Kumari</td>
+                <td>Mathematics</td>
+                <td>92</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Aman Singh</td>
+                <td>Physics</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Neha Verma</td>
+                <td>Chemistry</td>
+                <td>78</td>
+                <td>B+</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
